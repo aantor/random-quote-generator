@@ -65,7 +65,7 @@ const generateQuote = () => {
   const author = authors[Math.floor(Math.random() * authors.length)];
   const quote = quotes[author];
 
-  document.querySelector('blockquote p').textContent = quote;
+  document.querySelector('blockquote p span').textContent = quote;
   document.querySelector('cite').textContent = author;
 };
 
